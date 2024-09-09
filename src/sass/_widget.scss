@@ -1,0 +1,70 @@
+/* Основные стили для виджета погоды */
+.weather-widget {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background-color: #f0f8ff; /* Легкий голубой фон */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  max-width: 300px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Стили для элементов списка погоды */
+.weather-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Специальные классы для отдельных элементов */
+.weather-country,
+.weather-capital,
+.weather-temp,
+.weather-humidity {
+  grid-column: span 1;
+}
+
+.weather-condition {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  grid-column: 1 / span 2; /* Занимает 2 колонки */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Текст внутри блока погодного состояния */
+.weather-condition-text {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+/* Иконка погоды */
+.weather-icon {
+  width: 60px;
+  height: auto;
+}
+
+/* Эффект при наведении */
+.weather-item:hover {
+  background-color: #e0f7fa;
+  cursor: pointer;
+}
