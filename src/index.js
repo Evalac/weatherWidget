@@ -15,7 +15,10 @@ function onSearchBtn(e) {
   e.preventDefault();
   //   console.dir(e.target);
   const data = new FormData(e.currentTarget);
+
   const arrCountry = data.getAll('country');
+  console.log(arrCountry);
+
   const filteredCountry = arrCountry
     .filter(country => country)
     .map(country => country.replace(/ /g, ''));
