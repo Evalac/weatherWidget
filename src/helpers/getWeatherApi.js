@@ -1,5 +1,5 @@
 async function getWeather(arr) {
-  const BASE_URL = `http://api.weatherapi.com/v1`;
+  const BASE_URL = `https://api.weatherapi.com/v1`;
   const API_KEY = `abc434b827734d07912131947241009`;
 
   const responces = arr.map(async city => {
