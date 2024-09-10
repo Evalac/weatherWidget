@@ -8,12 +8,17 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <form action="submit" class="js-search">
-      <div class="form-container"><input type="text" name="country" /></div>
-      <button>Search</button>
-    </form>
-    <button class="js-add">Add country</button>
-
+    <div class="search-container">
+      <form action="submit" class="js-search">
+        <div class="btn-items">
+          <button class="btn">Search</button>
+          <button class="js-add btn">Add country</button>
+        </div>
+        <div class="form-container">
+          <input type="text" name="country" class="searhInput" />
+        </div>
+      </form>
+    </div>
     <div class="js-weather-container"></div>
 
     <script src="./index.js" type="module"></script>

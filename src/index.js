@@ -7,7 +7,7 @@ refs.addBtn.addEventListener('click', onCountryAdd);
 refs.searchForm.addEventListener('submit', onSearchBtn);
 
 function onCountryAdd(evt) {
-  const markup = `<input type="text" name="country">`;
+  const markup = `<input type="text" name="country" class="searhInput">`;
   refs.formContainer.insertAdjacentHTML('beforeend', markup);
 }
 

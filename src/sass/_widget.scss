@@ -1,8 +1,39 @@
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searhInput {
+  margin: 5px;
+}
+
+.btn-items {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin-right: 10px;
+  padding: 5px;
+  background-color: bisque;
+  border-radius: 5px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.js-weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* Основные стили для виджета погоды */
 .weather-widget {
   list-style: none;
   padding: 20px;
-  margin: 0;
+  margin-right: 20px;
   background-color: #f0f8ff; /* Легкий голубой фон */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
